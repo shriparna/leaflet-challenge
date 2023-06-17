@@ -44,6 +44,7 @@ function updateMap(features){
         L.circle(location, {
             fillOpacity: 0.75,
             stroke: true,
+            weight: 1,
             color: getColor(depth),
             fillcolor: getColor(depth),
             radius: magnitude * 10000
@@ -60,7 +61,7 @@ function updateMap(features){
 }
 
 function getColor(d) {
-    return  d > 90 ? '#ff4000' :
+    return  d > 90 ? '#ff4000':
             d > 70 ? '#ff8000':
             d > 50 ? '#ffbf00':
             d > 30 ? '#ffff00':
