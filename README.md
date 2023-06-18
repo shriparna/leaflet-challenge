@@ -9,7 +9,7 @@
 <hr>
 Package Contents:
 
-1. [index.html](https://github.com/shriparna/leaflet-challenge/blob/main/index.html) Main html file which was provided
+1. [index.html](https://github.com/shriparna/leaflet-challenge/blob/main/index.html (:target="_blank")) Main html file which was provided
 
 2. [static/css/style.css](https://github.com/shriparna/leaflet-challenge/blob/main/static/css/style.css) Main style file to be evaluated as it is updated from its original version provided
 
