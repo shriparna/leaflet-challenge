@@ -44,9 +44,10 @@ function updateMap(features){
         L.circle(location, {
             fillOpacity: 0.75,
             stroke: true,
-            weight: 1,
-            color: getColor(depth),
-            fillcolor: getColor(depth),
+            weight: 0.5,
+            color: "black",
+            fillColor: getColor(depth),
+            fillOpacity: 0.75,
             radius: magnitude * 10000
         }).bindPopup("<p>" 
                     + place + "<hr>"
@@ -61,12 +62,12 @@ function updateMap(features){
 }
 
 function getColor(d) {
-    return  d > 90 ? '#ff4000':
+    return  d > 90 ? '#f21b3f':
             d > 70 ? '#ff8000':
-            d > 50 ? '#ffbf00':
-            d > 30 ? '#ffff00':
-            d > 10 ? '#aad576':
-                     '#38b000';
+            d > 50 ? '#ff9e00':
+            d > 30 ? '#ffbf00':
+            d > 10 ? '#bce784':
+                     '#70e000';
 }
 
 var legend = L.control({
